@@ -14,3 +14,8 @@ C:\SD69Blue\GameFinder\GameFinder.Models\obj\Debug\GameFinder.Models.csproj.Core
 C:\SD69Blue\GameFinder\GameFinder.Models\obj\Debug\GameFinder.Models.csproj.CopyComplete
 C:\SD69Blue\GameFinder\GameFinder.Models\obj\Debug\GameFinder.Models.dll
 C:\SD69Blue\GameFinder\GameFinder.Models\obj\Debug\GameFinder.Models.pdb
+C:\SD69Blue\GameFinder\GameFinder.Models\bin\Debug\GameFinder.Data.dll
+C:\SD69Blue\GameFinder\GameFinder.Models\bin\Debug\GameFinder.Data.pdb
+C:\SD69Blue\GameFinder\GameFinder.Models\bin\Debug\GameFinder.Data.dll.config
+C:\SD69Blue\GameFinder\GameFinder.Models\bin\Debug\Newtonsoft.Json.dll
+C:\SD69Blue\GameFinder\GameFinder.Models\bin\Debug\Newtonsoft.Json.xml

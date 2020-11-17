@@ -55,12 +55,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GetGames.cs" />
+    <Compile Include="GetGameSystem.cs" />
     <Compile Include="PostAGame.cs" />
+    <Compile Include="PostSystem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GameFinder.Data\GameFinder.Data.csproj">
+      <Project>{CB7E443C-3DA3-435C-AABB-3A425BEFB527}</Project>
+      <Name>GameFinder.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -35,6 +35,8 @@ namespace GameFinder.WebAPI.Models
         }
 
         public DbSet<Game> Games { get; set; }
+        public DbSet<GameSystem> GameSystems { get; set; }
+        
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

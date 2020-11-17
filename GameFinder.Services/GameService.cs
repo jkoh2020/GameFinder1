@@ -27,7 +27,8 @@ namespace GameFinder.Services
                 OwnerId = _userId,
                 // data         model
                 GameTitle = model.Title,
-                Description = model.Description
+                Description = model.GDescription,
+                Genre = model.Genre
             };
 
             using (var ctx = new ApplicationDbContext())
@@ -51,8 +52,9 @@ namespace GameFinder.Services
                         {
                        // model      data
                             Id = e.GameId,
-                            GameTitle = e.GameTitle,
-                            Description = e.Description
+                            Title = e.GameTitle,
+                            GDescription = e.Description,
+                            Genre = e.Genre
                         });
                 return query.ToArray();
             }

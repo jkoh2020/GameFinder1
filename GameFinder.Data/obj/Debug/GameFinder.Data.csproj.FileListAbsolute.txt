@@ -33,3 +33,7 @@ C:\SD69Blue\GameFinder\GameFinder.Data\obj\Debug\GameFinder.Data.csproj.CoreComp
 C:\SD69Blue\GameFinder\GameFinder.Data\obj\Debug\GameFinder.Data.csproj.CopyComplete
 C:\SD69Blue\GameFinder\GameFinder.Data\obj\Debug\GameFinder.Data.dll
 C:\SD69Blue\GameFinder\GameFinder.Data\obj\Debug\GameFinder.Data.pdb
+C:\SD69Blue\GameFinder\GameFinder.Data\obj\Debug\GameFinder.Data.Migrations.InitialCreate.resources
+C:\SD69Blue\GameFinder\GameFinder.Data\obj\Debug\GameFinder.Data.csproj.GenerateResource.cache
+C:\SD69Blue\GameFinder\GameFinder.Data\obj\Debug\GameFinder.Data.Migrations.firsttrial.resources
+C:\SD69Blue\GameFinder\GameFinder.Data\obj\Debug\GameFinder.Data.Migrations.thirdtrial.resources

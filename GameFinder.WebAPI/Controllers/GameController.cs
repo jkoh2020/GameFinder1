@@ -28,7 +28,7 @@ namespace GameFinder.WebAPI.Controllers
         public IHttpActionResult Create(PostAGame post)
         {
             if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+                return BadRequest(ModelState); // 400
             var service = CreateService();
             if (!service.CreatePost(post))
                 return InternalServerError();
@@ -42,6 +42,26 @@ namespace GameFinder.WebAPI.Controllers
         {
             List<Game> posts = await _context.Games.ToListAsync();
             return Ok(posts);
+        }
+
+        // Delete
+        [HttpDelete]
+        public async Task<IHttpActionResult> DeleteGame(int id)
+        {
+            Game game = await _context.Games.FindAsync(id);
+            if (game == null)
+            {
+                return NotFound(); // 404
+            }
+
+            _context.Games.Remove(game);
+
+            if (await _context.SaveChangesAsync() == 1)
+            {
+                return Ok(); 
+            }
+
+            return InternalServerError(); // 500
         }
     }
 }

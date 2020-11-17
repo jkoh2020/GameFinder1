@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -21,7 +23,11 @@ namespace GameFinder.Data
         [Required]
         public string Description { get; set; }
 
+        public Genre Genre { get; set; }
+
     }
+
+   [JsonConverter(typeof(StringEnumConverter))]
     public enum Genre
     {
         Platform,
@@ -34,6 +40,7 @@ namespace GameFinder.Data
         Simulation,
         Crafting,
         Sports,
-        Strategy
+        Strategy,
+        Genre
     }
 }

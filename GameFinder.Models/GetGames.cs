@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GameFinder.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,9 +10,10 @@ namespace GameFinder.Models
     public class GetGames
     {
         public int Id { get; set; }
-        public string GameTitle { get; set; }
-        public string Description { get; set; }
+        public string Title { get; set; }
+        public string GDescription { get; set; }
         public Guid OwnerId { get; set; }
+        public Genre Genre { get; set; }
 
     }
 }
